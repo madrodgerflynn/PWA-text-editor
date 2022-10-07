@@ -27,15 +27,15 @@ module.exports = () => {
         swDest: "src-sw.js",
       }),
       new WebpackPwaManifest({
-        fingerprints: false,
-        inject: true,
-        name: "Contact Cards",
-        short_name: "Contact",
-        description: "Never forget your contacts!",
+        name: "Just Another Text Editor",
+        short_name: "JATE",
+        description: "A text editor to take notes",
         background_color: "#225ca3",
         theme_color: "#225ca3",
         start_url: "./",
         publicPath: "./",
+        inject: true,
+        fingerprints: false,
         icons: [
           {
             src: path.resolve("src/images/logo.png"),
