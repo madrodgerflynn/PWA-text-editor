@@ -15,7 +15,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "errorlog": "^1.4.7",
     "express": "^4.17.1",
     "if-env": "^1.0.4"
   },
