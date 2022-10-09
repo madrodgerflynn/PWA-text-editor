@@ -30,9 +30,9 @@ Open the project and then navigate to the terminal. Type npm start run:dev to st
 
 To install necessary dependencies, follow these steps:
 
-- 1.) Begin by starting the server in the terminal.
-- 2.) Once the terminal is open you can click the install button to make sure it is installed.
-- 3.) Type in the text that you would like to store and... voila!
+- 1. Begin by starting the server in the terminal.
+- 2. Once the terminal is open you can click the install button to make sure it is installed.
+- 3. Type in the text that you would like to store and... voila!
 
 ## License
 
