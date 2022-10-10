@@ -1,0 +1,17 @@
+{
+  "name": "JATE",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start:dev": "cd Develop && concurrently \"cd client && npm run build\" \"cd server && npm run server\" ",
+    "start": "cd Develop && npm run build && cd server && node server.js",
+    "server": "cd Develop && cd server node server.js --ignore client",
+    "build": "cd Develop && cd client && npm run build",
+    "install": "cd Develop && cd server && npm i && cd ../client && npm i",
+    "client": "cd Develop && cd client && npm start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
