@@ -4,14 +4,22 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start:dev": "cd Develop && concurrently \"cd client && npm run build\" \"cd server && npm run server\" ",
-    "start": "cd Develop && npm run build && cd server && node server.js",
-    "server": "cd Develop && cd server node server.js --ignore client",
-    "build": "cd Develop && cd client && npm run build",
-    "install": "cd Develop && cd server && npm i && cd ../client && npm i",
-    "client": "cd Develop && cd client && npm start"
+    "start:dev": "concurrently \"cd client && npm run build\" \"cd server && npm run server\" ",
+    "start": "npm run build && cd server && node server.js",
+    "server": "cd server node server.js --ignore client",
+    "build": "cd client && npm run build",
+    "install": "cd server && npm i && cd ../client && npm i",
+    "client": "cd client && npm start"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "if-env": "^1.0.4"
+  },
+  "devDependencies": {
+    "concurrently": "^5.2.0",
+    "nodemon": "^2.0.4"
+  }
 }
