@@ -36,6 +36,7 @@ module.exports = () => {
         publicPath: "./",
         inject: true,
         fingerprints: false,
+        crossorigin: "use-credentials",
         icons: [
           {
             src: path.resolve("src/images/logo.png"),
